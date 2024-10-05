@@ -1,0 +1,10 @@
+services:
+
+  Country-service:
+    image: country-service
+    container_name: country-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
